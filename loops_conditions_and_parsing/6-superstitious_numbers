@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Printing 1 to 20 with comments
 count=1
 while [ $count -le 20 ];
 do
