@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Printing "Best Schoo" ten times with for loop
 for ((count=1; count<=10; count++));
 do
