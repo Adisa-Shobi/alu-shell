@@ -7,11 +7,11 @@ start() {
 }
 stop() {
     pkill -f manage_my_process &
-    sudo rm /var/run/my_process.pid
+    rm /var/run/my_process.pid
     echo "manage_my_process stopped"
 }
 restart() {
-    sudo kill "$(cat /var/run/my_process.pid)"
+    pkill manage_my_process
     sudo rm /var/run/my_process.pid
     ./manage_my_process &
     pgrep -f manage_my_process > /var/run/my_process.pid
