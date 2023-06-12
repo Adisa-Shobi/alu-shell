@@ -15,7 +15,7 @@ quit() {
 }
 trap int SIGINT
 trap quit SIGQUIT
-trap remove SIGTERM
+trap term SIGTERM
 while true;
 do
     echo "To infinity and beyond"
